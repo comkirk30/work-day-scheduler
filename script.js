@@ -33,11 +33,17 @@ $("#hour17 .description").val(localStorage.getItem("hour17"));
         $(this).addClass("past");
         $(this).addClass("present");
         $(this).addClass("future");
-
-
       }
 
-    }
+      else if (blockHour === currentHour) {
+        $(this).removeClass("past");
+        $(this).removeClass("present");
+        $(this).removeClass("future");
+      }
+        })
+      }
+      hourTracker();
+    })
 
 
 
