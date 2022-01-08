@@ -43,16 +43,4 @@ $("#hour17 .description").val(localStorage.getItem("hour17"));
         })
       }
       hourTracker();
-    })
-
-
-
-
-  }
-
-
-
-
-
-
-});
+    });
